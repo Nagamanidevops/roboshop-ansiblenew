@@ -8,3 +8,8 @@
   ansible.builtin.file:
     path: /usr/share/nginx/html/
     state: absent
+    
+- name: Create a http document directory 
+  ansible.builtin.file:
+    path: /usr/share/nginx/html/
+    state: directory
