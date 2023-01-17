@@ -1,4 +1,4 @@
 - name: roboshop setup
   hosts: "{{HOSTS}}"
   roles: 
-    - "{{rolename}}"
+    - "{{ROLE_NAME}}"
