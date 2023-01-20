@@ -4,7 +4,7 @@
     state: installed
     
 - name: app prereq
-  ansible.builtin.include_tasks: "prereq.yml"
+  ansible.builtin.include_tasks: "pre-req.yml"
 
 - name: systemD setup
   ansible.builtin.include_tasks: "systemd.yml"
