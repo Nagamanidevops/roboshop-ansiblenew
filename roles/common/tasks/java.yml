@@ -5,6 +5,11 @@
     
 - name: app prereq
   ansible.builtin.include_tasks: "pre-req.yml"
+  
+- name: Maven Build
+  ansible.builtin.shell: mvn clean package ; mv target/{{component}}-1.0.jar {{component}}.jar
+  args:
+    chdir: /app
 
 - name: systemD setup
   ansible.builtin.include_tasks: "systemd.yml"
