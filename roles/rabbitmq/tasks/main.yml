@@ -27,6 +27,3 @@
     write_priv: .*
     state: present
     tags: administrator
-    
-    
-    
