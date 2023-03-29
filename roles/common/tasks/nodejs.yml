@@ -19,16 +19,24 @@
 #     dest: "/home/roboshop/catalogue/rds-combined-ca-bundle.pem"
 #     when: schema_load
     
+# - name: Download DocDB CA file
+#   ansible.builtin.get_url:
+#     url:  https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
+#   # dest: /home/roboshop/{{component}}/rds-combined-ca-bundle.pem
+#     dest: /app/rds-combined-ca-bundle.pem
+#     when: schema_load
+    
+    
 - name: Download DocDB CA file
   ansible.builtin.get_url:
     url:  https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
-   # dest: /home/roboshop/{{component}}/rds-combined-ca-bundle.pem
     dest: /app/rds-combined-ca-bundle.pem
-    when: schema_load
+  when: schema_load
 
     
 - name: SystemD Setup
   ansible.builtin.include_tasks: "systemd.yml"
+  
 - name: Load Schema
   ansible.builtin.include_tasks: "{{schema_type}}-schema.yml"
   when: schema_load
