@@ -15,6 +15,12 @@
     
     
     #grafana
+    
+- name: Make Template
+  ansible.builtin.template:
+    src: grafana-template.json
+    dest: /tmp/grafana.json
+    remote_src: yes
 -  name: Import Grafana dashboard 
    community.grafana.grafana_dashboard:
      grafana_url: http://172.31.8.126:3000
