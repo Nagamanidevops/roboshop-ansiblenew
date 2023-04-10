@@ -48,6 +48,8 @@
         - {name: "dev.rds.DB_ADMIN_PASS", value: "RoboShop123" }
         - {name: "dev.rabbitmq.USER", value: "roboshop" }
         - {name: "dev.rabbitmq.PASS", value: "roboshop1234" }
+        - {name: "grafana.api_key", value: "eyJrIjoiV2hXemhWQThHSVhPN09BZXdXaHBScXZVNVpGc093T08iLCJuIjoiY2xpIiwiaWQiOjF9" }
+
 
 
 
