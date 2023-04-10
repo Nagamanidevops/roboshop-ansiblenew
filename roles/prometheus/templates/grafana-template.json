@@ -194,6 +194,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": {{component}},
-  "weekStart": "",
+  "title": "{{component}}",
+  "weekStart": ""
 }
