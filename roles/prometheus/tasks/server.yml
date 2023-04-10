@@ -12,3 +12,15 @@
   ansible.builtin.systemd:
     name: prometheus
     state: restarted
+    
+    
+    #grafana
+-  name: Import Grafana dashboard 
+   community.grafana.grafana_dashboard:
+     grafana_url: http://172.31.8.126:3000
+     grafana_api_key: "{{ grafana_api_key }}"
+     state: present
+     commit_message: Updated by ansible
+     overwrite: yes
+     path: /tmp/grafana.json
+    
