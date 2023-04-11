@@ -14,7 +14,7 @@ alerting:
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 rule_files:
   - "record-rules.yml"
-  # - "alert-rules.yml"
+  - "alert-rules.yml"
   # - "alerts/*.yml"
 
   # - "second_rules.yml"

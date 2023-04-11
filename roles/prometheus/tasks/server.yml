@@ -11,6 +11,12 @@
   ansible.builtin.template:
     src: record-rules.yml
     dest: /opt/prometheus/record-rules.yml
+    
+- name: Copy alert Rules
+  ansible.builtin.template:
+    src: alert-rules.yml
+    dest: /opt/prometheus/alert-rules.yml
+    
 
 
 - name: Restart Prometheus
