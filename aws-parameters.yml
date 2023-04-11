@@ -49,6 +49,10 @@
         - {name: "dev.rabbitmq.USER", value: "roboshop" }
         - {name: "dev.rabbitmq.PASS", value: "roboshop1234" }
         - {name: "grafana.api_key", value: "eyJrIjoiV2hXemhWQThHSVhPN09BZXdXaHBScXZVNVpGc093T08iLCJuIjoiY2xpIiwiaWQiOjF9" }
+        - {name: "ses.user", value: "AKIA6RAWBVTZGEJ5YZPM" }
+        - {name: "ses.pass", value: "BLXYxxQkgL2MVoCb1vA7iOC0DcK5+xYwdXk5cVR6tbRP" }
+
+
 
 
 
