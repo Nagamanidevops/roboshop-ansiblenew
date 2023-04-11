@@ -7,7 +7,7 @@ route:
 receivers:
   - name: "email"
     email_configs:
-      - to: "raghuk.vit@gmail.com"
+      - to: "nagamanichava18.com"
         from: "nagamanichava18@gmail.com"
         smarthost: "email-smtp.us-east-1.amazonaws.com:587"
         auth_username: "{{ lookup('aws_ssm', 'ses.user', region='us-east-1' ) }}"
