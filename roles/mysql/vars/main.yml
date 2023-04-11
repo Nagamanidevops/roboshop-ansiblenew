@@ -1,1 +1,2 @@
 component: mysql
+service_name: mysql

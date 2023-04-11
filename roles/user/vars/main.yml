@@ -2,5 +2,6 @@ component: user
 schema_load: true
 schema_type: mongodb
 app_version: 1.1.2
+service_name: user
 
 
