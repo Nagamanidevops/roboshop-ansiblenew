@@ -1,3 +1,16 @@
+# groups:
+#   - name: Alerts
+#     rules:
+#       - alert: InstanceDown
+#         expr: up == 0
+#         for: 1m
+#         labels:
+#           severity: critical
+#         annotations:
+# {% raw %} summary: "Instance Down - [{{ $labels.name }}]"
+#           description: "Instance Down - [{{ $labels.name }}]"
+# {% endraw %}
+          
 groups:
   - name: Alerts
     rules:
@@ -6,8 +19,7 @@ groups:
         for: 1m
         labels:
           severity: critical
-        annotations:
-{% raw %} summary: "Instance Down - [{{ $labels.name }}]"
+        annotations: {% raw %}
+          summary: "Instance Down - [{{ $labels.name }}]"
           description: "Instance Down - [{{ $labels.name }}]"
 {% endraw %}
-          
