@@ -33,7 +33,7 @@
         
         - {name: "prod.cart.REDIS_HOST", value: "redis-prod.devopsg70.online" }
         - {name: "prod.cart.CATALOGUE_HOST", value: "catalogue-prod.devopsg70.online" }
-        - {name: "dev.catalogue.MONGO", value: "true" }
+        - {name: "prod.catalogue.MONGO", value: "true" }
         - {name: "prod.catalogue.MONGO_URL", value: "mongodb://mongodb-prod.devopsg70.online:27017/catalogue" }
         - {name: "prod.frontend.CATALOGUE_URL", value: "http://catalogue-prod.devopsg70.online:80/" }
         - {name: "prod.frontend.CART_URL", value: "http://cart-prod.devopsg70.online:80/" }
