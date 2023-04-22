@@ -1,0 +1,14 @@
+- name: Stop the Application
+  ansible.builtin.systemd:
+    name: "{{component}}"
+    state: stopped
+    
+    
+- name: app prereq
+  ansible.builtin.include_tasks: "pre-req.yml"
+  
+- name: start the Application
+  ansible.builtin.systemd:
+    name: "{{component}}"
+    state: started
+    
